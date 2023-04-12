@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: sticky;
+	top: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+.navbar ul li{
+	font-family: Bahnschrift;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+.navbar ul li a:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+/* Home Section */
+#home{
+	display: flex;
+	flex-direction: column;
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-bottom: 10px;
+}
+#home::before{
+	content: "";
+	min-height: 115vh;
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(img22.jpg) no-repeat center center/cover;
+	height: 900px;
+	width: 100%;
+	z-index: -1;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid white */
+	align-items: center;
+	position: absolute;
+	top: 30%;
+	right: 10%;
+}
+.headings{
+	font-family: 'Rage Italic', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 40px 0px;
+	color: grey;
+}
+.btn{
+	font-family: Georgia;
+	font-size: 1.5rem;
+	padding: 10px 35px;
+	background-color: transparent;
+	border: 1px solid white;
+	color: black;
+	outline: none;
+	transition: .6s ease;
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 5px black;, 0 0 10px white, 0 0 15px black;
+	font-weight: bold;
+	border: none;
+}
+/* About Section */
+#about{
+	min-height: 115vh;
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+	color: white;
+	background: #be9b7b;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+#about h1{
+	font-family: rage italic;
+	color: black; 
+	font-size: 4rem;
+}
+#pic{
+	display: flex;
+}
+#pic img{
+	width: 700px;
+	height: 400px;
+}
+#intro{
+	color: black;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+	font-family: Bahnschrift Light;
+}
+#intro h2{
+	color: black;
+	font-family: Georgia;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+/* Our Dates Section */
+#dates{
+	min-height: 115vh;
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	background: #fff4e6;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#dates h1{
+	color: grey;
+	font-family: rage italic;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.gallery img{
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+	border-radius: 24px;
+}
+/* Why I Love Him */
+#why{
+	min-height: 115vh;
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+  background: #4b3832;
+	margin-top: 10px;
+	font-size: 2rem;
+	text-align: center;
+	padding: 35px;
+	color: white;
+	margin-bottom: 10px;
+}
+#why h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-family: rage italic;
+}
+
+
+/* How He should Feel Love */
+#how{
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+  background: #854442;
+	font-family: Segoe Script;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-bottom: 10px;
+	min-height: 115vh;
+	border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 24px;
+  margin-top: 10px;
+}
+#how h1{
+	color: black;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.box{
+	font-family: Bahnschrift Light;
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 600px;
+	border: 1px solid black;
+	margin: 10px;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(to top, rgb(255,228,196) 50%, transparent 50%);
+	background-size: 100% 200%;
+	transition: all .8s;
+}
+.box h1{
+	font-family: Georgia;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.box:hover{
+	background-position: left bottom;
+	border: none;
+	color: #800000;
+	box-shadow: 0 0 20px #FFF8DC;
+}
